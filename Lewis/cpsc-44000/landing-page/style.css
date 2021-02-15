@@ -1,0 +1,153 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(back.JPEG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  
+  height: 100%;
+  font-family: "Audiowide", sans-serif;
+  font-size: 25px;
+  
+  
+}
+.menu-bar
+{
+  
+  
+  background:transparent;
+  text-align: center;
+  position: relative;
+  top:12em;
+  
+
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: rgb(255, 255, 255);
+}
+.menu-bar ul li
+{
+  width: 200px;
+  margin: 15px;
+  padding: 15px;
+
+}
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color: cornsilk;
+}
+.menu-bar ul li:hover
+{
+
+  background: rgb(71, 192, 152);
+  color: aquamarine;
+  box-shadow: 0 0 5px aquamarine,
+              0 0 25px aquamarine,
+              0 0 50px aquamarine,
+              0 0 200px aquamarine;
+
+  border-radius: 3px;
+}
+
+.sub-menu
+{
+    display: none;
+
+}
+.menu-bar ul li:hover .sub-menu
+{
+  display: block;
+  position: absolute;
+  background: transparent;
+  margin-top:15px;
+  margin-left:-15px;
+  
+ 
+}
+.menu-bar ul li:hover .sub-menu ul
+{
+  display: block;
+  margin:10px;
+  
+}
+.menu-bar ul li:hover .sub-menu li
+{
+  width: 150px;
+  padding:10px;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  box-shadow:none;
+  
+
+}
+.menu-bar ul li:hover .sub-menu li:last-child
+{
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu li a:hover
+{
+  
+  color:rgb(255, 5, 5);
+  text-shadow:  0 0 5px rgb(255, 5, 5),
+                0 0 25px rgb(255, 5, 5),
+                0 0 50px rgb(255, 5, 5),
+                0 0 200px rgb(255, 5, 5);
+}
+.welcome
+{
+  font-family: "Audiowide", sans-serif;
+  font-size: 50px;
+  color:white;
+  position: relative;
+  text-align: center;
+  top:5em;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,rgb(0, 0, 0)
+  );
+  animation: animate 5s linear infinite;
+  
+}
+.welcome a
+{
+text-decoration: none;
+color:aqua;
+
+}
+.welcome a:hover
+{
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 10px rgb(255, 0, 0),
+  0 0 20px rgb(255, 0, 0),
+  0 0 40px rgb(255, 0, 0),
+  0 0 80px rgb(255, 0, 0),
+  0 0 160px rgb(255, 0, 0);
+}
+@keyframes animate
+{
+
+  0%,20%,40%,60%,80%,100% {
+      color:aqua;
+      box-shadow: none;
+
+
+  }
+   20%,40%,60%,80%,100%
+  {
+    color: white;
+    text-shadow: 0 0 10px aqua,
+    0 0 20px aqua,
+    0 0 40px aqua,
+    0 0 80px aqua,
+    0 0 160px aqua;
+  }
+
+}
